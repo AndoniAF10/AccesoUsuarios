@@ -46,5 +46,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuariosAccesoDatos.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesPermisos\EntidadesPermisos.csproj">
+      <Project>{1b1adea5-84d5-4908-a785-2ae29036dfba}</Project>
+      <Name>EntidadesPermisos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

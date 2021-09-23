@@ -9,6 +9,7 @@ namespace EntidadesPermisos
    public class Usuarios
     {
         private int _idusuario;
+        private string _nombre;
         private string _apellidop;
         private string _apellidom;
         private string _fechanacimiento;
@@ -21,5 +22,6 @@ namespace EntidadesPermisos
         public string Fechanacimiento { get => _fechanacimiento; set => _fechanacimiento = value; }
         public string Rfc { get => _rfc; set => _rfc = value; }
         public string Fkidaccesos { get => _fkidaccesos; set => _fkidaccesos = value; }
+        public string Nombre { get => _nombre; set => _nombre = value; }
     }
 }
