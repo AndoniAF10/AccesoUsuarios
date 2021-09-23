@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BC6373E3-360C-40E5-B2D6-6EDED52CF52E}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PresentacionesPermisos</RootNamespace>
     <AssemblyName>PresentacionesPermisos</AssemblyName>
@@ -30,9 +30,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,8 +46,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHerramientas.Designer.cs">
+      <DependentUpon>FrmHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistro.Designer.cs">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmHerramientas.resx">
+      <DependentUpon>FrmHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistro.resx">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

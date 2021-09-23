@@ -1,0 +1,11 @@
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\bin\Debug\PresentacionesPermisos.pdb
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.csproj.AssemblyReference.cache
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmHerramientas.resources
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmMenu.resources
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmProductos.resources
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmRegistro.resources
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.csproj.GenerateResource.cache
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.csproj.CoreCompileInputs.cache
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.pdb
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\bin\Debug\PresentacionesPermisos.exe
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.exe
