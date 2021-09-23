@@ -8,5 +8,6 @@ namespace ManejadoresPermisos
 {
     public class Class1
     {
+ 
     }
 }
