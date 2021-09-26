@@ -30,7 +30,7 @@ namespace AccesoDatosPermisos
         {
             try
             {
-                string consulta = string.Format("insert into herramientas values ('{0}','{1}','{2}','{3}')",
+                string consulta = string.Format("insert into herramientas values ('{0}','{1}','{2}','{3}','{4}')",
                     herramienta.Codigoherramienta, herramienta.Nombre,herramienta.Medida,herramienta.Marca,herramienta.Descripcion);
                 _conexion.EjecutarConsulta(consulta);
             }
@@ -59,7 +59,7 @@ namespace AccesoDatosPermisos
         {
             try
             {
-                string consulta = string.Format("update herramientas set nombre = '{0}', medida = '{1}', marca = '{2}',descripción = '{3}' where CodigoHerramienta = '{4}'",
+                string consulta = string.Format("update herramientas set nombre = '{0}', medida = '{1}', marca = '{2}',descripcion = '{3}' where CodigoHerramienta = '{4}'",
                 herramienta.Nombre, herramienta.Medida, herramienta.Marca, herramienta.Descripcion,herramienta.Codigoherramienta);
                 _conexion.EjecutarConsulta(consulta);
             }
@@ -89,7 +89,7 @@ namespace AccesoDatosPermisos
                     Nombre = row["nombre"].ToString(),
                     Medida = row["medida"].ToString(),
                     Marca = row["marca"].ToString(),
-                    Descripcion = row["descripción"].ToString(),
+                    Descripcion = row["descripcion"].ToString()
 
                 };
 
@@ -109,7 +109,7 @@ namespace AccesoDatosPermisos
             {
                 string consulta = string.Format("insert into usuarios values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",
                     usuario.Idusuario, usuario.Nombre, usuario.Apellidop, usuario.Apellidom, usuario.Fechanacimiento,usuario.Rfc,
-                    usuario.Fkidaccesos);
+                  usuario.Contrasena,usuario.Fkidaccesos);
                 _conexion.EjecutarConsulta(consulta);
             }
             catch (Exception ex)
@@ -137,8 +137,10 @@ namespace AccesoDatosPermisos
         {
             try
             {
-                string consulta = string.Format("update usuarios set nombre = '{0}', apellidop = '{1}', apellidom = '{2}',fechanacimiento = '{3}',rfc = '{4}',fkidaccesos = '{5}' where idusuario = '{6}'",
-                usuario.Nombre, usuario.Apellidop, usuario.Apellidom, usuario.Fechanacimiento, usuario.Rfc,
+                string consulta = string.Format("update usuarios set nombre = '{0}', apellidop = '{1}'," +
+                    " apellidom = '{2}',fechanacimiento = '{3}',rfc = '{4}',contrasena = '{5}',fkidaccesos = '{6}'" +
+                    " where idusuario = '{7}'",
+                usuario.Nombre, usuario.Apellidop, usuario.Apellidom, usuario.Fechanacimiento, usuario.Rfc,usuario.Contrasena,
                 usuario.Fkidaccesos, usuario.Idusuario);
                 _conexion.EjecutarConsulta(consulta);
             }
@@ -169,6 +171,7 @@ namespace AccesoDatosPermisos
                     Apellidop = row["apellidop"].ToString(),
                     Apellidom = row["apellidom"].ToString(),
                     Fechanacimiento = row["fechanacimiento"].ToString(),
+                    Contrasena = row["contrasena"].ToString(),
                     Rfc = row["rfc"].ToString(),
                     Fkidaccesos = row["fkidaccesos"].ToString(),
 
@@ -180,6 +183,30 @@ namespace AccesoDatosPermisos
             }
 
             return ListaUsuarios;
+        }
+
+
+        public bool ExisteUsuario(Usuarios usuario)
+        {
+            try
+            {
+                string consulta = string.Format("select count(*) from usuarios where nombre ='{0}' and contrasena = '{1}'", usuario.Nombre, usuario.Contrasena);
+                var existe = _conexion.Existencia(consulta);
+                if (existe == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine("Fallo la consulta" + ex.Message);
+                return false;
+            }
         }
 
 

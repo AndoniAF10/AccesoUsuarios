@@ -17,12 +17,7 @@ namespace ManejadoresPermisos
             bool error = true;
             string cadenaErrores = "";
 
-            if (usuario.Idusuario == null)
-            {
-                cadenaErrores = cadenaErrores + "El campo Nombre no puede ser vacio \n";
-                error = false;
-            }
-
+            
             if (usuario.Nombre.Length == 0 || usuario.Nombre == null)
             {
                 cadenaErrores = cadenaErrores + "El campo de la descripcion no puede ser vacio \n";
@@ -52,6 +47,13 @@ namespace ManejadoresPermisos
                 cadenaErrores = cadenaErrores + "El campo del encargado no puede ser vacio \n";
                 error = false;
             }
+
+            if (usuario.Contrasena.Length == 0 || usuario.Contrasena == null)
+            {
+                cadenaErrores = cadenaErrores + "El campo del encargado no puede ser vacio \n";
+                error = false;
+            }
+
 
             if (usuario.Fkidaccesos.Length == 0 || usuario.Fkidaccesos == null)
             {
@@ -111,6 +113,12 @@ namespace ManejadoresPermisos
 
                 Console.WriteLine("Fallo la eliminacion" + ex.Message);
             }
+        }
+
+        public bool ExisteUsuario(Usuarios usuario)
+        {
+            var existe = _usuariosAccesoDatos.ExisteUsuario(usuario);
+            return existe;
         }
     }
 }

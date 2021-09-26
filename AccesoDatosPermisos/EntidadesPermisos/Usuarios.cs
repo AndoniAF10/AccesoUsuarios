@@ -14,6 +14,7 @@ namespace EntidadesPermisos
         private string _apellidom;
         private string _fechanacimiento;
         private string _rfc;
+        private string _contrasena;
         private string _fkidaccesos;
 
         public int Idusuario { get => _idusuario; set => _idusuario = value; }
@@ -23,5 +24,6 @@ namespace EntidadesPermisos
         public string Rfc { get => _rfc; set => _rfc = value; }
         public string Fkidaccesos { get => _fkidaccesos; set => _fkidaccesos = value; }
         public string Nombre { get => _nombre; set => _nombre = value; }
+        public string Contrasena { get => _contrasena; set => _contrasena = value; }
     }
 }

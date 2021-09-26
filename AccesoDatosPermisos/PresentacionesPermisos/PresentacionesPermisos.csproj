@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCreaHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreaHerramientas.Designer.cs">
+      <DependentUpon>FrmCreaHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreaProductos.Designer.cs">
+      <DependentUpon>FrmCreaProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHerramientas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,10 +88,34 @@
     <Compile Include="FrmRegistro.Designer.cs">
       <DependentUpon>FrmRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVistasHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVistasHerramientas.Designer.cs">
+      <DependentUpon>FrmVistasHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVistasProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVistasProductos.Designer.cs">
+      <DependentUpon>FrmVistasProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVistasUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVistasUsuarios.Designer.cs">
+      <DependentUpon>FrmVistasUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmCreaHerramientas.resx">
+      <DependentUpon>FrmCreaHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreaProductos.resx">
+      <DependentUpon>FrmCreaProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmHerramientas.resx">
       <DependentUpon>FrmHerramientas.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +131,25 @@
     <EmbeddedResource Include="FrmRegistro.resx">
       <DependentUpon>FrmRegistro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmVistasHerramientas.resx">
+      <DependentUpon>FrmVistasHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVistasProductos.resx">
+      <DependentUpon>FrmVistasProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVistasUsuarios.resx">
+      <DependentUpon>FrmVistasUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesPermisos\EntidadesPermisos.csproj">
+      <Project>{1b1adea5-84d5-4908-a785-2ae29036dfba}</Project>
+      <Name>EntidadesPermisos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManejadoresPermisos\ManejadoresPermisos.csproj">
+      <Project>{e0ce37c4-b8f7-4688-bb25-f0c552150ff1}</Project>
+      <Name>ManejadoresPermisos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

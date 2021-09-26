@@ -41,12 +41,18 @@ namespace PresentacionesPermisos
             this.txtRFC = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(92, 61);
+            this.label2.Location = new System.Drawing.Point(92, 32);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 24);
@@ -55,8 +61,8 @@ namespace PresentacionesPermisos
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(396, 55);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtNombre.Location = new System.Drawing.Point(396, 26);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(6);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(180, 29);
             this.txtNombre.TabIndex = 2;
@@ -64,7 +70,7 @@ namespace PresentacionesPermisos
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(92, 101);
+            this.label3.Location = new System.Drawing.Point(92, 72);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(149, 24);
@@ -73,8 +79,8 @@ namespace PresentacionesPermisos
             // 
             // txtApellidop
             // 
-            this.txtApellidop.Location = new System.Drawing.Point(396, 96);
-            this.txtApellidop.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtApellidop.Location = new System.Drawing.Point(396, 67);
+            this.txtApellidop.Margin = new System.Windows.Forms.Padding(6);
             this.txtApellidop.Name = "txtApellidop";
             this.txtApellidop.Size = new System.Drawing.Size(180, 29);
             this.txtApellidop.TabIndex = 4;
@@ -82,7 +88,7 @@ namespace PresentacionesPermisos
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(92, 142);
+            this.label4.Location = new System.Drawing.Point(92, 113);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 24);
@@ -91,8 +97,8 @@ namespace PresentacionesPermisos
             // 
             // txtApellidom
             // 
-            this.txtApellidom.Location = new System.Drawing.Point(396, 137);
-            this.txtApellidom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtApellidom.Location = new System.Drawing.Point(396, 108);
+            this.txtApellidom.Margin = new System.Windows.Forms.Padding(6);
             this.txtApellidom.Name = "txtApellidom";
             this.txtApellidom.Size = new System.Drawing.Size(180, 29);
             this.txtApellidom.TabIndex = 6;
@@ -100,7 +106,7 @@ namespace PresentacionesPermisos
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(92, 183);
+            this.label5.Location = new System.Drawing.Point(92, 154);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(188, 24);
@@ -109,8 +115,8 @@ namespace PresentacionesPermisos
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(396, 178);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtFecha.Location = new System.Drawing.Point(396, 149);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(6);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(180, 29);
             this.txtFecha.TabIndex = 8;
@@ -118,7 +124,7 @@ namespace PresentacionesPermisos
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(92, 224);
+            this.label6.Location = new System.Drawing.Point(92, 195);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 24);
@@ -127,25 +133,26 @@ namespace PresentacionesPermisos
             // 
             // txtRFC
             // 
-            this.txtRFC.Location = new System.Drawing.Point(396, 219);
-            this.txtRFC.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtRFC.Location = new System.Drawing.Point(396, 190);
+            this.txtRFC.Margin = new System.Windows.Forms.Padding(6);
             this.txtRFC.Name = "txtRFC";
             this.txtRFC.Size = new System.Drawing.Size(180, 29);
             this.txtRFC.TabIndex = 10;
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(396, 292);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnRegistrar.Location = new System.Drawing.Point(396, 327);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(6);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(180, 42);
             this.btnRegistrar.TabIndex = 12;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(96, 292);
+            this.BtnCancelar.Location = new System.Drawing.Point(96, 327);
             this.BtnCancelar.Margin = new System.Windows.Forms.Padding(6);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(184, 42);
@@ -153,11 +160,77 @@ namespace PresentacionesPermisos
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(92, 233);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(103, 24);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "contraseña";
+            // 
+            // txtContraseña
+            // 
+            this.txtContraseña.Location = new System.Drawing.Point(396, 228);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(6);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(180, 29);
+            this.txtContraseña.TabIndex = 14;
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(92, 278);
+            this.lblEstado.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(157, 24);
+            this.lblEstado.TabIndex = 16;
+            this.lblEstado.Text = "Estado de cuenta";
+            this.lblEstado.Visible = false;
+            // 
+            // cmbEstado
+            // 
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Items.AddRange(new object[] {
+            "Administrador",
+            "Usuario",
+            "Invitado"});
+            this.cmbEstado.Location = new System.Drawing.Point(396, 270);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(180, 32);
+            this.cmbEstado.TabIndex = 17;
+            this.cmbEstado.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(627, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 24);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Nombre";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(745, 29);
+            this.txtID.Margin = new System.Windows.Forms.Padding(6);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(180, 29);
+            this.txtID.TabIndex = 18;
+            // 
             // FrmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 367);
+            this.ClientSize = new System.Drawing.Size(969, 423);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.cmbEstado);
+            this.Controls.Add(this.lblEstado);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.label6);
@@ -171,7 +244,7 @@ namespace PresentacionesPermisos
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FrmRegistro";
             this.Text = "FrmRegistro";
             this.ResumeLayout(false);
@@ -180,18 +253,23 @@ namespace PresentacionesPermisos
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtApellidop;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtApellidom;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtFecha;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtRFC;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button BtnCancelar;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txtNombre;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox txtApellidop;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox txtApellidom;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox txtFecha;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox txtRFC;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox txtContraseña;
+        public System.Windows.Forms.Label lblEstado;
+        public System.Windows.Forms.ComboBox cmbEstado;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox txtID;
     }
 }
