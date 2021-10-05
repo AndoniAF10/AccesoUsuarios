@@ -47,6 +47,8 @@ namespace PresentacionesPermisos
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbPerfil = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label2
@@ -141,7 +143,7 @@ namespace PresentacionesPermisos
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(396, 327);
+            this.btnRegistrar.Location = new System.Drawing.Point(396, 432);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(6);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(180, 42);
@@ -152,7 +154,7 @@ namespace PresentacionesPermisos
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(96, 327);
+            this.BtnCancelar.Location = new System.Drawing.Point(96, 432);
             this.BtnCancelar.Margin = new System.Windows.Forms.Padding(6);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(184, 42);
@@ -181,7 +183,7 @@ namespace PresentacionesPermisos
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(92, 278);
+            this.lblEstado.Location = new System.Drawing.Point(92, 358);
             this.lblEstado.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(157, 24);
@@ -196,7 +198,7 @@ namespace PresentacionesPermisos
             "Administrador",
             "Usuario",
             "Invitado"});
-            this.cmbEstado.Location = new System.Drawing.Point(396, 270);
+            this.cmbEstado.Location = new System.Drawing.Point(396, 350);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(180, 32);
             this.cmbEstado.TabIndex = 17;
@@ -220,11 +222,34 @@ namespace PresentacionesPermisos
             this.txtID.Size = new System.Drawing.Size(180, 29);
             this.txtID.TabIndex = 18;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(92, 286);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 24);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Perfil";
+            // 
+            // cmbPerfil
+            // 
+            this.cmbPerfil.FormattingEnabled = true;
+            this.cmbPerfil.Items.AddRange(new object[] {
+            "Vendedor",
+            "Proveedor"});
+            this.cmbPerfil.Location = new System.Drawing.Point(396, 278);
+            this.cmbPerfil.Name = "cmbPerfil";
+            this.cmbPerfil.Size = new System.Drawing.Size(180, 32);
+            this.cmbPerfil.TabIndex = 22;
+            // 
             // FrmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(969, 423);
+            this.ClientSize = new System.Drawing.Size(598, 511);
+            this.Controls.Add(this.cmbPerfil);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.cmbEstado);
@@ -271,5 +296,7 @@ namespace PresentacionesPermisos
         public System.Windows.Forms.ComboBox cmbEstado;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox txtID;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.ComboBox cmbPerfil;
     }
 }

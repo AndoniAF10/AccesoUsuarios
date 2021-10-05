@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using EntidadesPermisos;
 using ManejadoresPermisos;
@@ -51,6 +44,7 @@ namespace PresentacionesPermisos
             usuario.Contrasena = txtContraseña.Text;
             usuario.Rfc = txtRFC.Text;
             usuario.Fkidaccesos = "Usuario";
+            usuario.FkPerfil = cmbPerfil.Text;
 
             var valida = _manejaUsuario.ValidarUsuarios(usuario);
 
@@ -79,7 +73,8 @@ namespace PresentacionesPermisos
                 Fechanacimiento = txtFecha.Text,
                 Rfc = txtRFC.Text,
                 Contrasena = txtContraseña.Text,
-                Fkidaccesos = cmbEstado.Text
+                Fkidaccesos = cmbEstado.Text,
+                FkPerfil = cmbPerfil.Text
 
 
             });

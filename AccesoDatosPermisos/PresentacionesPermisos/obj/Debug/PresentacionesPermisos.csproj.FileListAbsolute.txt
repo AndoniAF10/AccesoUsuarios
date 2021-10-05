@@ -38,3 +38,5 @@ C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\De
 C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmVistasHerramientas.resources
 C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmCreaProductos.resources
 C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmVistasProductos.resources
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmCompras.resources
+C:\Users\CESAR\Andoni\permisos\AccesoDatosPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmVentas.resources

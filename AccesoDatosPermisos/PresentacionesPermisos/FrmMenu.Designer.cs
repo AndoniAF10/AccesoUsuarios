@@ -40,6 +40,11 @@ namespace PresentacionesPermisos
             this.lblSalir = new System.Windows.Forms.ToolStripLabel();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
             this.lblTipoCuenta = new System.Windows.Forms.ToolStripLabel();
+            this.lblCompras = new System.Windows.Forms.ToolStripLabel();
+            this.btnCompras = new System.Windows.Forms.ToolStripButton();
+            this.lblVentas = new System.Windows.Forms.ToolStripLabel();
+            this.BtnVentas = new System.Windows.Forms.ToolStripButton();
+            this.lblPerfil = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +60,12 @@ namespace PresentacionesPermisos
             this.btnProductos,
             this.lblSalir,
             this.btnSalir,
-            this.lblTipoCuenta});
+            this.lblTipoCuenta,
+            this.lblCompras,
+            this.btnCompras,
+            this.lblVentas,
+            this.BtnVentas,
+            this.lblPerfil});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(79, 451);
@@ -133,6 +143,45 @@ namespace PresentacionesPermisos
             this.lblTipoCuenta.Text = "cuenta";
             this.lblTipoCuenta.Visible = false;
             // 
+            // lblCompras
+            // 
+            this.lblCompras.Name = "lblCompras";
+            this.lblCompras.Size = new System.Drawing.Size(76, 15);
+            this.lblCompras.Text = "Compras";
+            // 
+            // btnCompras
+            // 
+            this.btnCompras.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnCompras.Image = ((System.Drawing.Image)(resources.GetObject("btnCompras.Image")));
+            this.btnCompras.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCompras.Name = "btnCompras";
+            this.btnCompras.Size = new System.Drawing.Size(76, 20);
+            this.btnCompras.Text = "toolStripButton1";
+            this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
+            // 
+            // lblVentas
+            // 
+            this.lblVentas.Name = "lblVentas";
+            this.lblVentas.Size = new System.Drawing.Size(76, 15);
+            this.lblVentas.Text = "Ventas";
+            // 
+            // BtnVentas
+            // 
+            this.BtnVentas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnVentas.Image = ((System.Drawing.Image)(resources.GetObject("BtnVentas.Image")));
+            this.BtnVentas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnVentas.Name = "BtnVentas";
+            this.BtnVentas.Size = new System.Drawing.Size(76, 20);
+            this.BtnVentas.Text = "toolStripButton2";
+            this.BtnVentas.Click += new System.EventHandler(this.BtnVentas_Click);
+            // 
+            // lblPerfil
+            // 
+            this.lblPerfil.Name = "lblPerfil";
+            this.lblPerfil.Size = new System.Drawing.Size(76, 15);
+            this.lblPerfil.Text = "Perfil";
+            this.lblPerfil.Visible = false;
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,5 +209,10 @@ namespace PresentacionesPermisos
         public System.Windows.Forms.ToolStripLabel lblSalir;
         public System.Windows.Forms.ToolStripButton btnSalir;
         public System.Windows.Forms.ToolStripLabel lblTipoCuenta;
+        public System.Windows.Forms.ToolStripLabel lblPerfil;
+        public System.Windows.Forms.ToolStripLabel lblCompras;
+        public System.Windows.Forms.ToolStripButton btnCompras;
+        public System.Windows.Forms.ToolStripLabel lblVentas;
+        public System.Windows.Forms.ToolStripButton BtnVentas;
     }
 }

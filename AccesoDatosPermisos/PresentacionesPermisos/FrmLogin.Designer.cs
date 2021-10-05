@@ -37,11 +37,13 @@ namespace PresentacionesPermisos
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.btnInvitado = new System.Windows.Forms.Button();
             this.btnRegistra = new System.Windows.Forms.Button();
+            this.cmbPerfil = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(74, 216);
+            this.BtnCancelar.Location = new System.Drawing.Point(77, 245);
             this.BtnCancelar.Margin = new System.Windows.Forms.Padding(11);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(188, 34);
@@ -52,7 +54,7 @@ namespace PresentacionesPermisos
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(299, 216);
+            this.btnRegistrar.Location = new System.Drawing.Point(302, 245);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(11);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(253, 34);
@@ -64,7 +66,7 @@ namespace PresentacionesPermisos
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(70, 181);
+            this.label6.Location = new System.Drawing.Point(73, 99);
             this.label6.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 24);
@@ -73,7 +75,7 @@ namespace PresentacionesPermisos
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(302, 172);
+            this.txtContraseña.Location = new System.Drawing.Point(305, 96);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(11);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
@@ -83,7 +85,7 @@ namespace PresentacionesPermisos
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(70, 105);
+            this.label5.Location = new System.Drawing.Point(73, 46);
             this.label5.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(174, 24);
@@ -92,7 +94,7 @@ namespace PresentacionesPermisos
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(302, 96);
+            this.txtUsuario.Location = new System.Drawing.Point(305, 43);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(11);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(253, 29);
@@ -100,7 +102,7 @@ namespace PresentacionesPermisos
             // 
             // btnInvitado
             // 
-            this.btnInvitado.Location = new System.Drawing.Point(74, 272);
+            this.btnInvitado.Location = new System.Drawing.Point(77, 301);
             this.btnInvitado.Margin = new System.Windows.Forms.Padding(11);
             this.btnInvitado.Name = "btnInvitado";
             this.btnInvitado.Size = new System.Drawing.Size(478, 34);
@@ -111,7 +113,7 @@ namespace PresentacionesPermisos
             // 
             // btnRegistra
             // 
-            this.btnRegistra.Location = new System.Drawing.Point(74, 328);
+            this.btnRegistra.Location = new System.Drawing.Point(77, 357);
             this.btnRegistra.Margin = new System.Windows.Forms.Padding(11);
             this.btnRegistra.Name = "btnRegistra";
             this.btnRegistra.Size = new System.Drawing.Size(478, 34);
@@ -120,11 +122,34 @@ namespace PresentacionesPermisos
             this.btnRegistra.UseVisualStyleBackColor = true;
             this.btnRegistra.Click += new System.EventHandler(this.btnRegistra_Click);
             // 
+            // cmbPerfil
+            // 
+            this.cmbPerfil.FormattingEnabled = true;
+            this.cmbPerfil.Items.AddRange(new object[] {
+            "Vendedor",
+            "Proveedor"});
+            this.cmbPerfil.Location = new System.Drawing.Point(305, 145);
+            this.cmbPerfil.Name = "cmbPerfil";
+            this.cmbPerfil.Size = new System.Drawing.Size(252, 32);
+            this.cmbPerfil.TabIndex = 24;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(73, 153);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 24);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Perfil";
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 422);
+            this.Controls.Add(this.cmbPerfil);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnRegistra);
             this.Controls.Add(this.btnInvitado);
             this.Controls.Add(this.BtnCancelar);
@@ -152,5 +177,7 @@ namespace PresentacionesPermisos
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Button btnInvitado;
         private System.Windows.Forms.Button btnRegistra;
+        public System.Windows.Forms.ComboBox cmbPerfil;
+        public System.Windows.Forms.Label label7;
     }
 }

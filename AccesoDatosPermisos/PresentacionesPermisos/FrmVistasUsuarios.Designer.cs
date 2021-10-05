@@ -38,9 +38,10 @@ namespace PresentacionesPermisos
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(556, 326);
+            this.btnCancelar.Location = new System.Drawing.Point(577, 200);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(170, 31);
+            this.btnCancelar.Size = new System.Drawing.Size(261, 41);
             this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -49,17 +50,19 @@ namespace PresentacionesPermisos
             // dtgUsuarios
             // 
             this.dtgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgUsuarios.Location = new System.Drawing.Point(33, 97);
+            this.dtgUsuarios.Location = new System.Drawing.Point(15, 35);
+            this.dtgUsuarios.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dtgUsuarios.Name = "dtgUsuarios";
-            this.dtgUsuarios.Size = new System.Drawing.Size(471, 325);
+            this.dtgUsuarios.Size = new System.Drawing.Size(515, 206);
             this.dtgUsuarios.TabIndex = 1;
             this.dtgUsuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgUsuarios_CellDoubleClick);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(556, 151);
+            this.btnAgregar.Location = new System.Drawing.Point(577, 35);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(170, 31);
+            this.btnAgregar.Size = new System.Drawing.Size(261, 41);
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar usuarios";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@ namespace PresentacionesPermisos
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(556, 242);
+            this.btnEliminar.Location = new System.Drawing.Point(577, 115);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(170, 31);
+            this.btnEliminar.Size = new System.Drawing.Size(261, 41);
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "eliminar usuarios";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -77,13 +81,15 @@ namespace PresentacionesPermisos
             // 
             // FrmVistasUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(860, 288);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dtgUsuarios);
             this.Controls.Add(this.btnCancelar);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "FrmVistasUsuarios";
             this.Text = "FrmVistasUsuarios";
             this.Load += new System.EventHandler(this.FrmVistasUsuarios_Load);

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompras.Designer.cs">
+      <DependentUpon>FrmCompras.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCreaHerramientas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerfilUsuario.Designer.cs">
+      <DependentUpon>FrmPerfilUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,12 @@
     </Compile>
     <Compile Include="FrmRegistro.Designer.cs">
       <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVentas.Designer.cs">
+      <DependentUpon>FrmVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmVistasHerramientas.cs">
       <SubType>Form</SubType>
@@ -110,6 +128,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmCompras.resx">
+      <DependentUpon>FrmCompras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCreaHerramientas.resx">
       <DependentUpon>FrmCreaHerramientas.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistro.resx">
       <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentas.resx">
+      <DependentUpon>FrmVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVistasHerramientas.resx">
       <DependentUpon>FrmVistasHerramientas.cs</DependentUpon>

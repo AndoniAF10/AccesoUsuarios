@@ -107,9 +107,9 @@ namespace AccesoDatosPermisos
         {
             try
             {
-                string consulta = string.Format("insert into usuarios values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",
+                string consulta = string.Format("insert into usuarios values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')",
                     usuario.Idusuario, usuario.Nombre, usuario.Apellidop, usuario.Apellidom, usuario.Fechanacimiento,usuario.Rfc,
-                  usuario.Contrasena,usuario.Fkidaccesos);
+                  usuario.Contrasena,usuario.Fkidaccesos, usuario.FkPerfil);
                 _conexion.EjecutarConsulta(consulta);
             }
             catch (Exception ex)
@@ -138,10 +138,10 @@ namespace AccesoDatosPermisos
             try
             {
                 string consulta = string.Format("update usuarios set nombre = '{0}', apellidop = '{1}'," +
-                    " apellidom = '{2}',fechanacimiento = '{3}',rfc = '{4}',contrasena = '{5}',fkidaccesos = '{6}'" +
-                    " where idusuario = '{7}'",
+                    " apellidom = '{2}',fechanacimiento = '{3}',rfc = '{4}',contrasena = '{5}',fkidaccesos = '{6}',fkPerfil = '{7}'" +
+                    " where idusuario = '{8}'",
                 usuario.Nombre, usuario.Apellidop, usuario.Apellidom, usuario.Fechanacimiento, usuario.Rfc,usuario.Contrasena,
-                usuario.Fkidaccesos, usuario.Idusuario);
+                usuario.Fkidaccesos,usuario.FkPerfil, usuario.Idusuario);
                 _conexion.EjecutarConsulta(consulta);
             }
             catch (Exception ex)
@@ -174,7 +174,7 @@ namespace AccesoDatosPermisos
                     Contrasena = row["contrasena"].ToString(),
                     Rfc = row["rfc"].ToString(),
                     Fkidaccesos = row["fkidaccesos"].ToString(),
-
+                    FkPerfil = row["fkPerfil"].ToString(),
                 };
 
 
@@ -190,7 +190,7 @@ namespace AccesoDatosPermisos
         {
             try
             {
-                string consulta = string.Format("select count(*) from usuarios where nombre ='{0}' and contrasena = '{1}'", usuario.Nombre, usuario.Contrasena);
+                string consulta = string.Format("select count(*) from usuarios where nombre ='{0}' and contrasena = '{1}' and fkPerfil = '{2}'", usuario.Nombre, usuario.Contrasena, usuario.FkPerfil);
                 var existe = _conexion.Existencia(consulta);
                 if (existe == 1)
                 {

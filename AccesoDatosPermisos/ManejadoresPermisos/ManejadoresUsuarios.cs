@@ -61,6 +61,12 @@ namespace ManejadoresPermisos
                 error = false;
             }
 
+            if (usuario.FkPerfil.Length == 0 || usuario.FkPerfil == null)
+            {
+                cadenaErrores = cadenaErrores + "El campo del encargado no puede ser vacio \n";
+                error = false;
+            }
+
 
 
 
